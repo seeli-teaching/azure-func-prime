@@ -1,0 +1,21 @@
+{
+    "name" : "Python & Azure",
+    "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bookworm",
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "python3 -m pip install -r requirements.txt",
+    "postCreateCommand": "",
+    "features": {
+		"ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}
+	},
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-toolsai.jupyter",
+          "ms-python.python",
+          "ms-vscode.vscode-node-azure-pack",  
+          "humao.rest-client"
+        ]
+      }
+    }
+}
+  
